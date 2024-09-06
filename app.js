@@ -26,7 +26,6 @@ function exibirDados(dadosParaExibir) {
 }
 
 function filtrarDados(termo) {
-    console.log(`Buscando por: ${termo}`); 
     const termoLower = termo.toLowerCase(); 
 
     const resultado = dados.filter(dado =>
@@ -35,8 +34,18 @@ function filtrarDados(termo) {
 
     exibirDados(resultado);
 
-    document.querySelectorAll('.conteudo').forEach(conteudo => {
-        conteudo.style.display = termo ? 'block' : 'none';
+    document.querySelectorAll('.item').forEach(item => {
+        const conteudo = item.querySelector('.conteudo');
+        if (termo.length >= 1) {
+            if (resultado.some(dado => dado.nome === item.querySelector('.nome').textContent)) {
+                item.style.display = 'block';
+                conteudo.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        } else {
+            item.conteudo.style.display = 'block';
+        }
     });
 }
 
