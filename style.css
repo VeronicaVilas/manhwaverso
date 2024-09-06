@@ -28,7 +28,8 @@ body {
 }
 
 header,
-.barra-busca {
+.barra-busca,
+footer {
     position: relative; 
     z-index: 10; 
     padding: 20px;
@@ -192,12 +193,21 @@ section input:hover {
     border: 1px solid #000;
     transition: 0.3s;
     background-color: #000;
-    color: white;
+    color: #FFF;
 }
 
 .botao button:hover{
     background: #ababab;
-    color: #fff;
+    color: #FFF;
+}
+
+footer {
+    color: #FFF;
+    text-align: left;
+    width: 40%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 0.9rem; /* Tamanho da fonte */
 }
 
 @media (max-width:1150px) {
