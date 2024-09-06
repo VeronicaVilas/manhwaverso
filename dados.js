@@ -39,6 +39,6 @@ const dados = [
         nome: 'Mint',
         descricao: 'Mint, a garota mais miserável do orfanato. Todos os dias ela recebia todos os tipos de abusos e sofria com isso, mas um dia um senhor apareceu no orfanato e disse: "Vou levar essa criança".',
         anoPublicacao: '2018',
-        classificacao: '<span>★★★★★/span>'
+        classificacao: '<span>★★★★★</span>'
     }
 ];
