@@ -19,6 +19,12 @@ A escolha desse tema reflete a paixão pessoal pela leitura de manhwa, que inspi
 ![HTML](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=E34F26>)
 ![CSS](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=1572B6)
 
+## 🌟 Recursos Principais
+- **Busca por manhwas**: Encontre seus títulos favoritos com facilidade através dos nomes.
+- **Classificação**: Verifique a classificação do seu manhwas favorito.
+- **Descrição detalhada**: Leia sobre um breve trecho antes de mergulhar na história.
+- **Ano de publicação**: Descubra o ano de publicação.
+
 ## 🛠️ Como Executar Localmente
 1. **Clone o repositório:**
 
@@ -36,4 +42,4 @@ cd medo-em-cena
 - Se preferir, utilize a extensão "Live Server" para uma visualização mais dinâmica. Basta clicar com o botão direito no arquivo `index.html` e selecionar "Open with Live Server".
 
 ------------
-Disponibilizado com carinho 👻 por [Verônica Vilas](https://www.linkedin.com/in/veronica-vilas/ "veronica-vilas").
+Disponibilizado com carinho ❤️ por [Verônica Vilas](https://www.linkedin.com/in/veronica-vilas/ "veronica-vilas").
