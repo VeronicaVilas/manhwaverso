@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>- Medo em Cena: Descubra Filmes de Terror -</h1>
+  <h1>- ManhwaVerse: Explore Mundos em Cada Página -</h1>
 </div>
 
 Este projeto foi desenvolvido como parte da [Imersão de Desenvolvimento promovida pela Alura em colaboração com o Google Gemini](https://www.alura.com.br/imersao-ia-google-gemini). Esse projeto oferece uma experiência inovadora para os fãs de manhwa, permitindo que os usuários pesquisem facilmente seus títulos favoritos. A plataforma fornece informações detalhadas, como a classificação, descrição e ano de publicação de cada manhwa, garantindo uma busca prática e eficiente. 
