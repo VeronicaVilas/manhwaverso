@@ -9,17 +9,17 @@ function exibirDados(dadosParaExibir) {
             item.className = 'item';
             item.style.backgroundImage = `url(${dado.imagem})`;
 
-            const content = document.createElement('div');
-            content.className = 'content';
+            const conteudo = document.createElement('div');
+            conteudo.className = 'conteudo';
 
-            content.innerHTML = `
-                <h2 class="name">${dado.nome}</h2>
-                <p class="des">${dado.descricao}</p>
-                <p class="des">Ano de lançamento: ${dado.anoLancamento}</p>
-                <p class="des">Classificação: ${dado.classificacao}</p>
+            conteudo.innerHTML = `
+                <h2 class="nome">${dado.nome}</h2>
+                <p class="info">${dado.descricao}</p>
+                <p class="info">Ano de lançamento: ${dado.anoLancamento}</p>
+                <p class="info">Classificação: ${dado.classificacao}</p>
             `;
 
-            item.appendChild(content);
+            item.appendChild(conteudo);
             container.appendChild(item);
         });
     }
@@ -41,6 +41,6 @@ exibirDados(dados);
 
 const inputBusca = document.querySelector('.barra-busca input');
 inputBusca.addEventListener('input', (event) => {
-    const valorBusca = event.target.value.trim(); // Obtém o valor do input e remove espaços extras
+    const valorBusca = event.target.value.trim(); 
     filtrarDados(valorBusca);
 });
