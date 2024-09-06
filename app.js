@@ -15,7 +15,7 @@ function exibirDados(dadosParaExibir) {
             conteudo.innerHTML = `
                 <h2 class="nome">${dado.nome}</h2>
                 <p class="info">${dado.descricao || 'Descrição não disponível'}</p>
-                <p class="info">Ano de lançamento: ${dado.anoLancamento || 'Não informado'}</p>
+                <p class="info">Ano de publicação: ${dado.anoPublicacao || 'Não informado'}</p>
                 <p class="info">Classificação: ${dado.classificacao || 'Não informada'}</p>
             `;
 

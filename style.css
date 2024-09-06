@@ -10,9 +10,23 @@ body {
     background: #eaeaea;
     overflow: hidden;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-image: url(./src/img/imagem_fundo.jpg);
-    background-repeat: no-repeat;
+    display: flex;
+}
+
+.half {
+    width: 50%;
+    height: 100vh;
     background-size: cover;
+}
+
+.left {
+    background-image: url('https://i.gifer.com/3BBF.gif');
+    background-position: left;
+}
+
+.right {
+    background-image: url('https://i.gifer.com/3BBF.gif');
+    background-position: right;
 }
 
 .container{
@@ -40,12 +54,16 @@ footer {
 h1 {
     font-size: 2.3rem;
     font-family: 'Matemasie', sans-serif;
-    color: #E85F2B;
+    color: #BF3B5E;
     text-align: center; 
     letter-spacing: 0.1rem;
     margin-bottom: -1rem;
     margin-top: 1rem;
-    text-shadow: 2px 2px 4px #f5f5f5;
+    text-shadow: 2px 2px 4px #1F1F1F;
+}
+
+h1 span {
+    color: #95BFBB;
 }
 
 section {
@@ -58,7 +76,7 @@ section span {
     position: relative;
     left: 2.8rem;
     font-size: 1.5rem;
-    color: #FF6430; 
+    color: #505050; 
 }
 
 section input {
@@ -70,8 +88,6 @@ section input {
     font-size: 1rem; 
     box-sizing: border-box;
     transition: all ease 0.3s;
-    background-color: #1F1F1F;
-    color: #F5F7F8;
 }
 
 section input:hover {
@@ -121,15 +137,15 @@ section input:hover {
 .item .conteudo{
     position: absolute;
     top: 55%;
-    left: 100px;
-    width: 330px;
+    left: 70px;
+    width: 410px;
     text-align: left;
     color: #eee;
     transform: translate(0, -40%);
     display: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
 }
 
 
@@ -139,7 +155,7 @@ section input:hover {
 
 
 .conteudo .nome{
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
@@ -156,9 +172,9 @@ section input:hover {
 }
 
 .conteudo .info span {
-    color: red;
+    color: #BF3B5E;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-left: -2.8rem;
 }
 
@@ -202,7 +218,6 @@ section input:hover {
 }
 
 footer {
-    color: #FFF;
     text-align: left;
     width: 40%; /* Largura total da página */
     position: absolute; /* Posiciona o rodapé */

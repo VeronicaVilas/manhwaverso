@@ -1,44 +1,44 @@
 const dados = [
     {
-        imagem: 'https://www.stephenking.com.br/wp-content/uploads/2012/02/shining.jpg',
-        nome: 'O iluminado',
-        descricao: 'Em um hotel isolado nas montanhas, um escritor aceita um emprego como zelador durante o inverno. Mas o que deveria ser uma temporada tranquila se transforma em um pesadelo quando forças sobrenaturais começam a atormentá-lo e sua família.',
-        anoLancamento: '1980',
-        classificacao: '<span>4,5/5</span>'
+        imagem: 'https://cdn.kobo.com/book-images/2c51ebd3-5134-41fc-8a1d-1bc83610fd55/1200/1200/False/solo-leveling-vol-3-comic.jpg',
+        nome: 'Solo Leveling',
+        descricao: 'Após sobreviver por milagre a uma perigosa masmorra, Jin-woo desperta um sistema único que lhe permite evoluir e se tornar mais forte a uma taxa incomparável.',
+        anoPublicacao: '2016',
+        classificacao: '<span>★★★★★</span>'
     },
     {
-        imagem: 'https://i.pinimg.com/736x/2e/e3/f0/2ee3f0b3650b9368c1834aad8545093a.jpg',
-        nome: 'O Exorcista',
-        descricao: 'Uma jovem é possuída por uma força demoníaca, e sua mãe desesperada busca a ajuda de um padre para realizar um exorcismo.',
-        anoLancamento: '1973',
-        classificacao: '<span>4,8/5</span>'
+        imagem: 'https://http2.mlstatic.com/D_NQ_NP_724058-MLU77235978090_072024-O.webp',
+        nome: 'O único Destino dos Vilões é a Morte',
+        descricao: 'A história gira em torno de uma jovem que, por um acaso do destino, se encontra dentro de um romance visual, assumindo o papel da vilã. Neste mundo, suas ações estão predeterminadas para levar à morte',
+        anoPublicacao: '2023',
+        classificacao: '<span>★★★★★</span>'
     },
     {
-        imagem: 'https://br.web.img3.acsta.net/pictures/15/05/14/21/14/504650.jpg',
-        nome: 'Alien, o Oitavo Passageiro',
-        descricao: 'Uma tripulação espacial é atacada por uma criatura alienígena durante uma missão de resgate.',
-        anoLancamento: '1979',
-        classificacao: '<span>4,7/5</span>'
+        imagem: 'https://m.media-amazon.com/images/I/6175PH7eGwL._AC_UF1000,1000_QL80_.jpg',
+        nome: 'Your Name',
+        descricao: 'Your Name é uma animação japonesa que tece uma trama emocionante e poética sobre a vida de dois adolescentes, Mitsuha e Taki, que vivem em realidades distintas. Um dia, de forma misteriosa, eles começam a trocar de corpos periodicamente, vivenciando as vidas um do outro.',
+        anoPublicacao: '2017',
+        classificacao: '<span>★★★★★</span>'
     },
     {
-        imagem: 'https://br.web.img3.acsta.net/pictures/15/09/15/21/05/589902.jpg',
-        nome: 'A Bruxa',
-        descricao: 'Uma família puritana é exilada para uma floresta remota, onde forças sobrenaturais e o medo começam a tomar conta.',
-        anoLancamento: '2015',
-        classificacao: '<span>4,6/5</span>'
+        imagem: 'https://i3.wp.com/kingofshojo.com/wp-content/uploads/2024/04/18fd150d-655c-43b4-bfd4-7af8f4c29dd0.jpg',
+        nome: 'A Irmã Preciosa do Vilão Grão-Duque',
+        descricao: 'A Irmã Preciosa do Vilão Grão-Duque é um manhwa que nos transporta para um mundo de fantasia, onde a protagonista se encontra em uma situação peculiar: ela é a irmã adotiva do vilão principal da história.',
+        anoPublicacao: '2023',
+        classificacao: '<span>★★★★★</span>'
     },
     {
-        imagem: 'https://br.web.img3.acsta.net/pictures/17/04/19/21/08/577190.jpg',
-        nome: 'Corra',
-        descricao: 'Um jovem negro visita a família de sua namorada branca e descobre uma sinistra verdade por trás da aparente cordialidade.',
-        anoLancamento: '2017',
-        classificacao: '<span>4,5/5</span>'
+        imagem: 'https://i2.wp.com/kingofshojo.com/wp-content/uploads/2024/06/59007614-6928-4084-8392-dd8a65ad12e9.jpg',
+        nome: 'Reminiscência Adônis',
+        descricao: 'Reminiscência Adônis é um manhwa que se destaca por sua narrativa complexa e por seus personagens intensos e obscuros.',
+        anoPublicacao: '2023',
+        classificacao: '<span>★★★★★</span>'
     },
     {
-        imagem: 'https://br.web.img3.acsta.net/pictures/18/06/14/13/11/1751062.jpg',
-        nome: 'Hereditário',
-        descricao: 'Uma família enfrenta eventos horríveis após a morte da avó, revelando um passado sombrio e uma força sobrenatural.',
-        anoLancamento: '2018',
-        classificacao: '<span>4,8/5</span>'
+        imagem: 'https://i3.wp.com/kingofshojo.com/wp-content/uploads/2024/06/d049bea3-a748-4166-ad63-6ccb552d0cb9.jpg',
+        nome: 'Mint',
+        descricao: 'Mint, a garota mais miserável do orfanato. Todos os dias ela recebia todos os tipos de abusos e sofria com isso, mas um dia um senhor apareceu no orfanato e disse: "Vou levar essa criança".',
+        anoPublicacao: '2018',
+        classificacao: '<span>★★★★★/span>'
     }
 ];
