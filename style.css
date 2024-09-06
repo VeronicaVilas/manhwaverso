@@ -219,16 +219,16 @@ section input:hover {
 
 footer {
     text-align: left;
-    width: 40%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
-    font-size: 0.9rem; /* Tamanho da fonte */
+    width: 40%; 
+    position: absolute; 
+    bottom: 0; 
+    font-size: 0.9rem; 
 }
 
-@media (max-width:1150px) {
+@media (max-width:1300px) {
 
     h1 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     .container .slide .item{
@@ -236,14 +236,24 @@ footer {
     }
 
     .item .conteudo{
-        left: 70px;
+        left: 50px;
         top: 300px;
+        width: 300px;
 
+    }
+
+    .conteudo .nome{    
+        font-size: 1.2rem;
+    }
+
+
+    footer {
+        display: none;
     }
     
 }
 
-@media (max-width:910px) {
+@media (max-width:1040px) {
 
     h1 {
         font-size: 1.5rem;
@@ -251,8 +261,8 @@ footer {
 
     .item .conteudo{
         top: 60%;
-        left: 10px;
-        width: 215px;
+        left: 20px;
+        width: 300px;
         padding: 20px;
     }
 
@@ -270,4 +280,20 @@ footer {
     
     
 }
+
+@media (max-width:830px) {
+
+    .item .conteudo{
+        width: 250px;
+    }
+}
+
+@media (max-width:680px) {
+
+    .item .conteudo{
+        left: 10px;
+        width: 220px;
+    }
+}
+
 
