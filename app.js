@@ -14,9 +14,9 @@ function exibirDados(dadosParaExibir) {
 
             conteudo.innerHTML = `
                 <h2 class="nome">${dado.nome}</h2>
-                <p class="info">${dado.descricao}</p>
-                <p class="info">Ano de lançamento: ${dado.anoLancamento}</p>
-                <p class="info">Classificação: ${dado.classificacao}</p>
+                <p class="info">${dado.descricao || 'Descrição não disponível'}</p>
+                <p class="info">Ano de lançamento: ${dado.anoLancamento || 'Não informado'}</p>
+                <p class="info">Classificação: ${dado.classificacao || 'Não informada'}</p>
             `;
 
             item.appendChild(conteudo);
@@ -33,8 +33,11 @@ function filtrarDados(termo) {
         dado.nome.toLowerCase().includes(termoLower)
     );
 
-    console.log(`Resultado da busca: ${JSON.stringify(resultado)}`);
     exibirDados(resultado);
+
+    document.querySelectorAll('.conteudo').forEach(conteudo => {
+        conteudo.style.display = termo ? 'block' : 'none';
+    });
 }
 
 exibirDados(dados);
