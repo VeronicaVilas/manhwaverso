@@ -1,24 +1,46 @@
-function pesquisar() {
-    // Obtém a seção HTML onde os resultados serão exibidos
-    let section = document.getElementById("resultados-pesquisa");
+function exibirDados(dadosParaExibir) {
+    const container = document.getElementById('resultados-pesquisa');
+    container.innerHTML = ''; 
+    if (dadosParaExibir.length === 0) {
+        container.innerHTML = '<p>Nenhum filme encontrado.</p>';
+    } else {
+        dadosParaExibir.forEach(dado => {
+            const item = document.createElement('div');
+            item.className = 'item';
+            item.style.backgroundImage = `url(${dado.imagem})`;
 
-    // Inicializa uma string vazia para armazenar os resultados
-    let resultados = "";
+            const content = document.createElement('div');
+            content.className = 'content';
 
-    // Itera sobre cada dado da lista de dados
-    for (let dado of dados) {
-        // Cria um novo elemento HTML para cada resultado
-        resultados += `
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">${dado.titulo}</a>
-                </h2>
-                <p class="descricao-meta">${dado.descricao}</p>
-                <a href=${dado.link} target="_blank">Mais informações</a>
-            </div>
-        `;
+            content.innerHTML = `
+                <h2 class="name">${dado.nome}</h2>
+                <p class="des">${dado.descricao}</p>
+                <p class="des">Ano de lançamento: ${dado.anoLancamento}</p>
+                <p class="des">Classificação: ${dado.classificacao}</p>
+            `;
+
+            item.appendChild(content);
+            container.appendChild(item);
+        });
     }
-
-    // Atribui os resultados gerados à seção HTML
-    section.innerHTML = resultados;
 }
+
+function filtrarDados(termo) {
+    console.log(`Buscando por: ${termo}`); 
+    const termoLower = termo.toLowerCase(); 
+
+    const resultado = dados.filter(dado =>
+        dado.nome.toLowerCase().includes(termoLower)
+    );
+
+    console.log(`Resultado da busca: ${JSON.stringify(resultado)}`);
+    exibirDados(resultado);
+}
+
+exibirDados(dados);
+
+const inputBusca = document.querySelector('.barra-busca input');
+inputBusca.addEventListener('input', (event) => {
+    const valorBusca = event.target.value.trim(); // Obtém o valor do input e remove espaços extras
+    filtrarDados(valorBusca);
+});
