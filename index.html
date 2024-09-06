@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>👻 Medo em Cena</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <header>
-        <h1>Atletas do Brasil</h1>
-    </header>
-    <main>
-        <section>
-            <input type="text" placeholder="Digite o nome do atleta">
-            <button onclick="pesquisar()">Pesquisar</button>
-        </section>
-        <section class="resultados-pesquisa" id="resultados-pesquisa">
-        </section>
-    </main>
-    <footer>
-        <p>2024 - Atletas do Brasil. Todos os direitos reservados</p>
-        <p>Entre em contato pelo email: guilherme@atletas.com.br</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Medo em Cena: Descubra Filmes de Terror</h1>
+        </header>
+        <main>
+            <section class="barra-busca">
+                <span class="mdi mdi-halloween"></span>
+                <input type="text" placeholder="Digite o nome do atleta">
+            </section>
+            <section>
+                <div class="slide" id="resultados-pesquisa"> 
+                </div>
+                <div class="button">
+                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="dados.js"></script>
     <script src="app.js"></script>
+    <script src="navegacao.js"></script>
 </body>
-
 </html>
